@@ -38,7 +38,8 @@ class Test(unittest.TestCase):
         #options.add_argument('--headless')
         options.add_argument('--disable-gpu')
         options.add_argument('--disable-extensions')
-        options.binary_location = "/snap/bin/chromium"
+        #options.binary_location = "/snap/bin/chromium"
+        options.binary_location = "./chromedriver"
         self.driver = webdriver.Chrome(options=options)
         print(inspect.stack()[0][3] + " - OK")
 
